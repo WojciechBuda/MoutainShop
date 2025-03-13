@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "5WXpDfS5CNUk/iNxEhDkv6iVjHnpztdMpq1Hrl4WJWs=",
+  "Source": "MoutainShop.WebApi",
+  "BasePath": "_content/MoutainShop.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
