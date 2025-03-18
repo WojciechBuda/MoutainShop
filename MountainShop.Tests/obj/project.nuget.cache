@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v5ALy+znHsA=",
+  "dgSpecHash": "2GCSEeN5GN0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\MountainShop.Tests\\MountainShop.Tests.csproj",
+  "projectFilePath": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MountainShop.Tests\\MountainShop.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wojci\\.nuget\\packages\\coverlet.collector\\6.0.0\\coverlet.collector.6.0.0.nupkg.sha512",
     "C:\\Users\\wojci\\.nuget\\packages\\microsoft.codecoverage\\17.8.0\\microsoft.codecoverage.17.8.0.nupkg.sha512",

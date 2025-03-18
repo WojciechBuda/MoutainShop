@@ -36,5 +36,26 @@ namespace MoutainShop.WebApi.Controllers
 
             return product;
         }
+
+        [HttpDelete(Name = "Delete")]
+        public Product Delete(int id)
+        {
+            var product = productService.GetProductById(id);
+
+            if (product == null)
+            {
+                throw new Exception("product deleted");
+            }
+
+            return(null);
+        }
+
+        [HttpPut(Name = "Update")]
+        public Product Put(Product product)
+        {
+            
+
+           
+        }
     }
 }

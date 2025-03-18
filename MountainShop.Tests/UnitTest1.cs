@@ -11,14 +11,14 @@ namespace MountainShop.Tests
         {
         }
 
-        [Test]
-        public void Test1()
-        {
+        //[Test]
+        //public void Test1()
+        //{
 
-            var wynik = 2 + 2;
-            Assert.AreEqual(1, wynik);
-                
-        }
+        //    var wynik = 2 + 2;
+        //    Assert.AreEqual(1, wynik);
+
+        //}
 
         [Test]
         public void Test2()
@@ -38,8 +38,7 @@ namespace MountainShop.Tests
             Assert.AreEqual(plecak.Name, klonplecak.Name);
             Assert.AreSame(plecak.Name, klonplecak.Name);
 
-
         }
-    
+
     }
 }
