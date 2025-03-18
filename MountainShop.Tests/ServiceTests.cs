@@ -29,10 +29,9 @@ public class ServiceTests
 
         //Act
 
-        
         productService.AddProduct(backpack);
         var addedBackPack = productService.GetProductById(backpack.Id);
-        
+
         //Assert
 
         Assert.IsNotNull(addedBackPack);
@@ -41,22 +40,48 @@ public class ServiceTests
         //Assert.AreEqual(backpack.Brand, addedBackPack.Brand);
     }
     [Test]
-    public void RemoveBackPackTest() { }
+    public void RemoveBackPackTest()
+    {
+        //Arrange
+
+        var backpack = new Backpack()
+        {
+            Id = 1,
+            Name = "Test_Remove",
+            Brand = "D2"
+        };
+
+        //Act
+
+        productService.AddProduct(backpack);
+        var addedBackpack = productService.GetProductById(backpack.Id);
+        if (addedBackpack == null)
+        {
+            Assert.Fail("backpack failed to retrive");
+        }
+        addedBackpack.Name = "Test_Remove";
+        productService.DeleteProduct(backpack.Id);
+        var deletedBackpack = productService.GetProductById(backpack.Id);
+
+        //Assert
+
+        Assert.IsNull(deletedBackpack);
+
+    }
 
     [Test]
-    public void AddAndUpdateBackpackTest() 
+    public void AddAndUpdateBackpackTest()
     {
         //Arange
 
         var backpack = new Backpack()
         {
             Id = 1,
-            Name = "Test",
+            Name = "Test1",
             Brand = "D1"
         };
 
         //Act
-
 
         productService.AddProduct(backpack);
         var addedBackPack = productService.GetProductById(backpack.Id);
@@ -74,5 +99,47 @@ public class ServiceTests
     }
 
     [Test]
-    public void AddMultipleBackpacksAndGetAllTest() { }
+    public void AddMultipleBackpacksAndGetAllTest()
+    {
+
+        //Arrange 
+
+        var backpack1 = new Backpack()
+        {
+            Id = 1,
+            Name = "Test1",
+            Brand = "D1",
+        };
+
+        var backpack2 = new Backpack()
+        {
+            Id = 2,
+            Name = "Test2",
+            Brand = "D2",
+        };
+
+        var backpack3 = new Backpack()
+        {
+            Id = 3,
+            Name = "Test3",
+            Brand = "D3",
+        };
+
+        //Act
+
+        productService.AddProduct(backpack1);
+        productService.AddProduct(backpack2);
+        productService.AddProduct(backpack3);
+
+        var allProducts = productService.GetAllProducts();
+
+        //Assert
+
+        Assert.IsNotNull(allProducts);
+        Assert.AreEqual(3, allProducts.Count());
+        Assert.IsTrue(allProducts.Any(p => p.Id == backpack1.Id && p.Name == backpack1.Name));
+        Assert.IsTrue(allProducts.Any(p => p.Id == backpack2.Id && p.Name == backpack2.Name));
+        Assert.IsTrue(allProducts.Any(p => p.Id == backpack3.Id && p.Name == backpack3.Name));
+
+    }
 }

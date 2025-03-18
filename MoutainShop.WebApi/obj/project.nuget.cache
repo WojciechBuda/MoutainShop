@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "J3qPruDxwtE=",
+  "dgSpecHash": "tOEF4xakJOE=",
   "success": true,
-  "projectFilePath": "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\MoutainShop.WebApi\\MoutainShop.WebApi.csproj",
+  "projectFilePath": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShop.WebApi\\MoutainShop.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\wojci\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\wojci\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

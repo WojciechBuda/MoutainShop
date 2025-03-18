@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MountainShop.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+834c468a6dedac2130b3a456a786d16f71567ca0")]
 [assembly: System.Reflection.AssemblyProductAttribute("MountainShop.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MountainShop.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

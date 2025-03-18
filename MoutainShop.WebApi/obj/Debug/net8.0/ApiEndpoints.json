@@ -1,6 +1,33 @@
 [
   {
     "ContainingType": "MoutainShop.WebApi.Controllers.ProductControllers",
+    "Method": "Post",
+    "RelativePath": "api/ProductControllers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "product",
+        "Type": "MoutainShop.Domain.Models.Product",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MoutainShop.Domain.Models.Product",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "PostProduct"
+  },
+  {
+    "ContainingType": "MoutainShop.WebApi.Controllers.ProductControllers",
     "Method": "Get",
     "RelativePath": "api/ProductControllers",
     "HttpMethod": "GET",
@@ -25,6 +52,33 @@
       }
     ],
     "EndpointName": "GetProduct"
+  },
+  {
+    "ContainingType": "MoutainShop.WebApi.Controllers.ProductControllers",
+    "Method": "Delete",
+    "RelativePath": "api/ProductControllers",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "MoutainShop.Domain.Models.Product",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "Delete"
   },
   {
     "ContainingType": "MoutainShop.WebApi.Controllers.WeatherForecastController",

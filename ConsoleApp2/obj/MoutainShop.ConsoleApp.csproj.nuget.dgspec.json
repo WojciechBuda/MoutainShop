@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\ConsoleApp2\\MoutainShop.ConsoleApp.csproj": {}
+    "C:\\Users\\wojci\\source\\repos\\MoutainShop\\ConsoleApp2\\MoutainShop.ConsoleApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\ConsoleApp2\\MoutainShop.ConsoleApp.csproj": {
+    "C:\\Users\\wojci\\source\\repos\\MoutainShop\\ConsoleApp2\\MoutainShop.ConsoleApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\ConsoleApp2\\MoutainShop.ConsoleApp.csproj",
+        "projectUniqueName": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\ConsoleApp2\\MoutainShop.ConsoleApp.csproj",
         "projectName": "MoutainShop.ConsoleApp",
-        "projectPath": "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\ConsoleApp2\\MoutainShop.ConsoleApp.csproj",
+        "projectPath": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\ConsoleApp2\\MoutainShop.ConsoleApp.csproj",
         "packagesPath": "C:\\Users\\wojci\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\ConsoleApp2\\obj\\",
+        "outputPath": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\ConsoleApp2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\MoutainShop.Domain\\MoutainShop.Domain.csproj": {
-                "projectPath": "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\MoutainShop.Domain\\MoutainShop.Domain.csproj"
+              "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShop.Domain\\MoutainShop.Domain.csproj": {
+                "projectPath": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShop.Domain\\MoutainShop.Domain.csproj"
               },
-              "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\MoutainShopService\\MoutainShopService.csproj": {
-                "projectPath": "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\MoutainShopService\\MoutainShopService.csproj"
+              "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShopService\\MoutainShopService.csproj": {
+                "projectPath": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShopService\\MoutainShopService.csproj"
               }
             }
           }
@@ -76,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\MoutainShop.Domain\\MoutainShop.Domain.csproj": {
+    "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShop.Domain\\MoutainShop.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\MoutainShop.Domain\\MoutainShop.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShop.Domain\\MoutainShop.Domain.csproj",
         "projectName": "MoutainShop.Domain",
-        "projectPath": "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\MoutainShop.Domain\\MoutainShop.Domain.csproj",
+        "projectPath": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShop.Domain\\MoutainShop.Domain.csproj",
         "packagesPath": "C:\\Users\\wojci\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\MoutainShop.Domain\\obj\\",
+        "outputPath": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShop.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -141,14 +141,14 @@
         }
       }
     },
-    "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\MoutainShopService\\MoutainShopService.csproj": {
+    "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShopService\\MoutainShopService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\MoutainShopService\\MoutainShopService.csproj",
+        "projectUniqueName": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShopService\\MoutainShopService.csproj",
         "projectName": "MoutainShopService",
-        "projectPath": "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\MoutainShopService\\MoutainShopService.csproj",
+        "projectPath": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShopService\\MoutainShopService.csproj",
         "packagesPath": "C:\\Users\\wojci\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\MoutainShopService\\obj\\",
+        "outputPath": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShopService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -169,8 +169,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\MoutainShop.Domain\\MoutainShop.Domain.csproj": {
-                "projectPath": "C:\\Users\\wojci\\source\\repos\\ConsoleApp2\\MoutainShop.Domain\\MoutainShop.Domain.csproj"
+              "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShop.Domain\\MoutainShop.Domain.csproj": {
+                "projectPath": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShop.Domain\\MoutainShop.Domain.csproj"
               }
             }
           }
