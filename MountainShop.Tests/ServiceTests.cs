@@ -8,7 +8,7 @@ namespace MountainShop.Tests;
 public class ServiceTests
 {
     private ProductService productService;
-
+    
     [SetUp]
     public void Setup()
     {
@@ -59,7 +59,6 @@ public class ServiceTests
         {
             Assert.Fail("backpack failed to retrive");
         }
-        addedBackpack.Name = "Test_Remove";
         productService.DeleteProduct(backpack.Id);
         var deletedBackpack = productService.GetProductById(backpack.Id);
 

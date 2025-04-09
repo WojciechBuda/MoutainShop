@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{77FA7415-895B-48DF-86DC-84C63F5BD4CF}|MoutainShop.WebApi\\MoutainShop.WebApi.csproj|c:\\users\\wojci\\source\\repos\\moutainshop\\moutainshop.webapi\\controllers\\productcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{77FA7415-895B-48DF-86DC-84C63F5BD4CF}|MoutainShop.WebApi\\MoutainShop.WebApi.csproj|solutionrelative:moutainshop.webapi\\controllers\\productcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8231B204-D4B8-4558-812D-A74A4370AEE3}|MountainShop.Tests\\MountainShop.Tests.csproj|c:\\users\\wojci\\source\\repos\\moutainshop\\mountainshop.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8231B204-D4B8-4558-812D-A74A4370AEE3}|MountainShop.Tests\\MountainShop.Tests.csproj|solutionrelative:mountainshop.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F7392BAD-233D-4C3A-96D7-4612F9D8B5CD}|MoutainShopService\\MoutainShopService.csproj|c:\\users\\wojci\\source\\repos\\moutainshop\\moutainshopservice\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7392BAD-233D-4C3A-96D7-4612F9D8B5CD}|MoutainShopService\\MoutainShopService.csproj|solutionrelative:moutainshopservice\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8231B204-D4B8-4558-812D-A74A4370AEE3}|MountainShop.Tests\\MountainShop.Tests.csproj|c:\\users\\wojci\\source\\repos\\moutainshop\\mountainshop.tests\\servicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8231B204-D4B8-4558-812D-A74A4370AEE3}|MountainShop.Tests\\MountainShop.Tests.csproj|solutionrelative:mountainshop.tests\\servicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{77FA7415-895B-48DF-86DC-84C63F5BD4CF}|MoutainShop.WebApi\\MoutainShop.WebApi.csproj|c:\\users\\wojci\\source\\repos\\moutainshop\\moutainshop.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA7415-895B-48DF-86DC-84C63F5BD4CF}|MoutainShop.WebApi\\MoutainShop.WebApi.csproj|solutionrelative:moutainshop.webapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{77FA7415-895B-48DF-86DC-84C63F5BD4CF}|MoutainShop.WebApi\\MoutainShop.WebApi.csproj|c:\\users\\wojci\\source\\repos\\moutainshop\\moutainshop.webapi\\controllers\\productcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{77FA7415-895B-48DF-86DC-84C63F5BD4CF}|MoutainShop.WebApi\\MoutainShop.WebApi.csproj|solutionrelative:moutainshop.webapi\\controllers\\productcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,59 +21,46 @@
       "VerticalTabListWidth": 223,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 220,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProductControllers.cs",
-              "DocumentMoniker": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShop.WebApi\\Controllers\\ProductControllers.cs",
-              "RelativeDocumentMoniker": "MoutainShop.WebApi\\Controllers\\ProductControllers.cs",
-              "ToolTip": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShop.WebApi\\Controllers\\ProductControllers.cs*",
-              "RelativeToolTip": "MoutainShop.WebApi\\Controllers\\ProductControllers.cs*",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAQwDEAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T20:51:04.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "ProductService.cs",
               "DocumentMoniker": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShopService\\ProductService.cs",
               "RelativeDocumentMoniker": "MoutainShopService\\ProductService.cs",
               "ToolTip": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShopService\\ProductService.cs",
               "RelativeToolTip": "MoutainShopService\\ProductService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T18:15:32.536Z",
+              "WhenOpened": "2025-03-24T18:34:24.801Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MountainShop.Tests\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "MountainShop.Tests\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MountainShop.Tests\\UnitTest1.cs",
-              "RelativeToolTip": "MountainShop.Tests\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShop.WebApi\\Program.cs",
+              "RelativeDocumentMoniker": "MoutainShop.WebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShop.WebApi\\Program.cs*",
+              "RelativeToolTip": "MoutainShop.WebApi\\Program.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-17T18:10:06.636Z",
+              "WhenOpened": "2025-03-24T18:30:46.041Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ServiceTests.cs",
-              "DocumentMoniker": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MountainShop.Tests\\ServiceTests.cs",
-              "RelativeDocumentMoniker": "MountainShop.Tests\\ServiceTests.cs",
-              "ToolTip": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MountainShop.Tests\\ServiceTests.cs",
-              "RelativeToolTip": "MountainShop.Tests\\ServiceTests.cs",
-              "ViewState": "AgIAAHwAAAAAAAAAAAAAwHsAAAAbAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "ProductControllers.cs",
+              "DocumentMoniker": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShop.WebApi\\Controllers\\ProductControllers.cs",
+              "RelativeDocumentMoniker": "MoutainShop.WebApi\\Controllers\\ProductControllers.cs",
+              "ToolTip": "C:\\Users\\wojci\\source\\repos\\MoutainShop\\MoutainShop.WebApi\\Controllers\\ProductControllers.cs",
+              "RelativeToolTip": "MoutainShop.WebApi\\Controllers\\ProductControllers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T20:04:56.862Z",
+              "WhenOpened": "2025-03-17T20:51:04.135Z",
               "EditorCaption": ""
             }
           ]
