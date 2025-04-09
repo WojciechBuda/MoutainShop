@@ -52,6 +52,7 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+.vs
 /.vs/MountainShop/FileContentIndex
 /.gitignore
 /.vs/MountainShop/DesignTimeBuild/.dtbcache.v2
