@@ -10,28 +10,33 @@ namespace MoutainShopService
 {
     public class ProductService
     {
-        public List<Product> ProductsBasket { get; set; }
-        public ProductService()
+        //public List<Product> ProductBasket { get; set; } //wyjac i wpisac
+
+        private readonly MoutainShopDbContext _context;
+        public ProductService(MoutainShopDbContext context) //konstruktor - odpala w momencie tworzenia instancji klasy
         {
-            ProductsBasket = new List<Product>();
+            
+            _context = context;
         }
         public void AddProduct(Product product)
         {
-            ProductsBasket.Add(product);
+            _context.Products.Add(product);
 
         }
         public void DeleteProduct(int productId)
         {
-            var productToRemove = ProductsBasket.FirstOrDefault(p => p.Id == productId); 
+            var productToRemove = _context.Products.FirstOrDefault(p => p.Id == productId); 
 
             if (productToRemove != null)
             {
-                ProductsBasket.Remove(productToRemove);
+                _context.Products.Remove(productToRemove);
             }
         }
+
         public Product GetProductById(int productId) 
         {
-            var product = ProductsBasket.FirstOrDefault(p => p.Id == productId);
+            
+            var product = _context.Products.FirstOrDefault(p => p.Id == productId);
 
             if (product != null)
             {
@@ -46,15 +51,15 @@ namespace MoutainShopService
 
         public List<Product> GetAllProducts()
         {
-            return ProductsBasket;
+            return _context.Products.ToList();
         }
 
         public Product UpdateProduct(Product product) 
         {
-            var existingProduct = ProductsBasket.FirstOrDefault(p => p.Id == product.Id);
-            ProductsBasket.Remove(existingProduct);
+            var existingProduct = _context.Products.FirstOrDefault(p => p.Id == product.Id);
+            _context.Products.Remove(existingProduct);
 
-            ProductsBasket.Add(product);
+            _context.Products.Add(product);
 
             return product; 
         }

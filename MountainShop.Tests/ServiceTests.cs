@@ -12,7 +12,7 @@ public class ServiceTests
     [SetUp]
     public void Setup()
     {
-        productService = new ProductService();
+        productService = new ProductService(null);
     }
 
     [Test]
