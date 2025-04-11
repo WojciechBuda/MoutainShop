@@ -37,9 +37,5 @@ app.MapControllers();
 
 app.Run();
 
-//stworzyæ statyczn¹ instancjê serwisu ?!?
 
-public static class StaticProductService
-{
-    public static ProductService ProductService = new ProductService();
-}
+

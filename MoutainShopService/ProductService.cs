@@ -15,15 +15,14 @@ namespace MoutainShopService
         private readonly MoutainShopDbContext _context;
         public ProductService(MoutainShopDbContext context) //konstruktor - odpala w momencie tworzenia instancji klasy
         {
-            
             _context = context;
         }
-        public void AddProduct(Product product)
+        public async Task AddProduct(Product product)
         {
             _context.Products.Add(product);
-
+            await _context.SaveChangesAsync();
         }
-        public void DeleteProduct(int productId)
+        public async Task DeleteProduct(int productId)
         {
             var productToRemove = _context.Products.FirstOrDefault(p => p.Id == productId); 
 
@@ -31,9 +30,10 @@ namespace MoutainShopService
             {
                 _context.Products.Remove(productToRemove);
             }
+            await _context.SaveChangesAsync();
         }
 
-        public Product GetProductById(int productId) 
+        public async Task<Product> GetProductById(int productId) 
         {
             
             var product = _context.Products.FirstOrDefault(p => p.Id == productId);
@@ -44,23 +44,26 @@ namespace MoutainShopService
             }
             else
             {
+
                 return null;
             }
-
+            
         }
 
-        public List<Product> GetAllProducts()
+        public async Task<List<Product>> GetAllProducts()
         {
+            
             return _context.Products.ToList();
+
         }
 
-        public Product UpdateProduct(Product product) 
+        public async Task<Product> UpdateProduct(Product product) 
         {
             var existingProduct = _context.Products.FirstOrDefault(p => p.Id == product.Id);
             _context.Products.Remove(existingProduct);
 
             _context.Products.Add(product);
-
+            await _context.SaveChangesAsync();
             return product; 
         }
     }

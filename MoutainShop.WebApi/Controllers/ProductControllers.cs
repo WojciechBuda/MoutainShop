@@ -11,26 +11,26 @@ namespace MoutainShop.WebApi.Controllers
     public class ProductControllers : ControllerBase
     {
         private ProductService productService;
-        public ProductControllers()
+        public ProductControllers(ProductService productService)
         {
-            productService = StaticProductService.ProductService;
+            this.productService = productService;
         }
 
 
         [Route("add")]
         [HttpPost(Name = "PostProduct")]
-        public Product Post(Product product)
+        public async Task<Product> Post(Product product)
         {
-            productService.AddProduct(product);
+            await productService.AddProduct(product);
 
             return product;
         }
 
         [Route("get")]
         [HttpGet(Name = "GetProduct")]
-        public Product Get(int id)
+        public async Task<Product> Get(int id)
         {
-            var product = productService.GetProductById(id);
+            var product = await productService.GetProductById(id);
 
             if (product == null) 
             {
@@ -42,27 +42,27 @@ namespace MoutainShop.WebApi.Controllers
 
         [Route("delete")]
         [HttpDelete(Name = "Delete")]
-        public void Delete(int id)
+        public async Task Delete(int id)
         {
             
-            productService.DeleteProduct(id);
+            await productService.DeleteProduct(id);
 
         }
 
         [Route("update")]
         [HttpPut(Name = "UpdateProduct")]
-        public Product Put(Product product)
+        public async Task<Product> Put(Product product)
         {
-            var updatedProduct = productService.UpdateProduct(product);
+            var updatedProduct = await productService.UpdateProduct(product);
 
             return updatedProduct;
         }
 
         [Route("getAll")]
         [HttpGet(Name = "getAll")]
-        public List<Product> GetProducts()
+        public async Task<List<Product>> GetProducts()
         {
-            var allProducts = productService.GetAllProducts();
+            var allProducts = await productService.GetAllProducts();
 
             return allProducts;
         }
