@@ -5,6 +5,15 @@ using MoutainShopService;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll", policy =>
+    {
+        policy.AllowAnyOrigin()     // zezwala wszystkim originom
+              .AllowAnyMethod()     // zezwala na wszystkie metody HTTP
+              .AllowAnyHeader();    // zezwala na wszystkie nag³ówki
+    });
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -20,7 +29,7 @@ builder.Services.AddScoped<ProductService>(); //scoped - jest tworzony za ka¿dym
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-
+app.UseCors("AllowAll");
 
 app.UseSwagger();
 app.UseSwaggerUI();

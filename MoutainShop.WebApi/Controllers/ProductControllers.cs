@@ -15,8 +15,7 @@ namespace MoutainShop.WebApi.Controllers
         {
             this.productService = productService;
         }
-
-
+        
         [Route("add")]
         [HttpPost(Name = "PostProduct")]
         public async Task<Product> Post(Product product)
