@@ -8,7 +8,7 @@ using MoutainShop.Domain.Models;
 
 namespace MoutainShopService
 {
-    public class ProductService
+    public class ProductService : IProductService
     {
         //public List<Product> ProductBasket { get; set; } //wyjac i wpisac
 
@@ -17,14 +17,14 @@ namespace MoutainShopService
         {
             _context = context;
         }
-        public async Task AddProduct(Product product)
+        public async Task AddProduct(Product product) 
         {
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
         }
         public async Task DeleteProduct(int productId)
         {
-            var productToRemove = _context.Products.FirstOrDefault(p => p.Id == productId); 
+            var productToRemove = _context.Products.FirstOrDefault(p => p.Id == productId);
 
             if (productToRemove != null)
             {
@@ -33,9 +33,9 @@ namespace MoutainShopService
             await _context.SaveChangesAsync();
         }
 
-        public async Task<Product> GetProductById(int productId) 
+        public async Task<Product> GetProductById(int productId)
         {
-            
+
             var product = _context.Products.FirstOrDefault(p => p.Id == productId);
 
             if (product != null)
@@ -47,25 +47,26 @@ namespace MoutainShopService
 
                 return null;
             }
-            
+
         }
 
         public async Task<List<Product>> GetAllProducts()
         {
-            
+
             return _context.Products.ToList();
 
         }
 
-        public async Task<Product> UpdateProduct(Product product) 
+        public async Task<Product> UpdateProduct(Product product)
         {
             var existingProduct = _context.Products.FirstOrDefault(p => p.Id == product.Id);
             _context.Products.Remove(existingProduct);
 
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
-            return product; 
+            return product;
         }
+
     }
 }
 //dodać funkcje do aktualizacji produktu i drugą ktora bedzie zwracala cala liste i funkcje ktore zwraca jeden proudkt po id

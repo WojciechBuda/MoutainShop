@@ -10,8 +10,8 @@ namespace MoutainShop.WebApi.Controllers
     [ApiController]
     public class ProductControllers : ControllerBase
     {
-        private ProductService productService;
-        public ProductControllers(ProductService productService)
+        private IProductService productService;
+        public ProductControllers(IProductService productService)
         {
             this.productService = productService;
         }
