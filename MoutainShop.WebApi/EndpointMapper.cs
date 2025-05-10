@@ -20,7 +20,7 @@ namespace MoutainShop.WebApi
             {
                 var product = await productService.GetProductById(id); //czeka az SKONCZY sie metoda GetProd...
                 return product is not null ? Results.Ok(product) : Results.NotFound("product not found"); // is not null to to samo co !=
-            });
+            }).RequireAuthorization(); // po )} daje .RequireAuth...
 
             // DELETE api/products/delete?id=1
             app.MapDelete("api/products/delete", async (int id, IProductService productService) =>

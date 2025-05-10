@@ -1,7 +1,11 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using MoutainShop.Domain.Models;
 using MoutainShop.WebApi;
 using MoutainShopService;
+using Microsoft.Identity.Web;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,7 +19,16 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader();    // zezwala na wszystkie nag³ówki
     });
 });
+//autentykacja kim jestes a autoryzacja czy masz dostep
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                   .AddMicrosoftIdentityWebApi(options =>
+                   {
+                       builder.Configuration.Bind("AzureAD", options);
 
+                       options.TokenValidationParameters.NameClaimType = "name";
+                   }, options => { builder.Configuration.Bind("AzureAD", options); });
+
+builder.Services.AddAuthorization();
 //builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -28,6 +41,8 @@ builder.Services.AddScoped<IProductService, ProductService>(); //scoped - jest t
 //builder.Services.AddSingleton<ProductService>(); //singleton - jest tworzony raz na odpalenie aplikacji (runtime)
 
 var app = builder.Build();
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapProductEndpoints();
 // Configure the HTTP request pipeline.
 app.UseCors("AllowAll");
