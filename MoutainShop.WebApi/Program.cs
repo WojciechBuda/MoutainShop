@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 using MoutainShop.Domain.Models;
 using MoutainShop.WebApi;
 using MoutainShopService;
@@ -23,12 +22,23 @@ builder.Services.AddCors(options =>
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                    .AddMicrosoftIdentityWebApi(options =>
                    {
-                       builder.Configuration.Bind("AzureAD", options);
+                       builder.Configuration.Bind("AzureB2C", options);
 
                        options.TokenValidationParameters.NameClaimType = "name";
-                   }, options => { builder.Configuration.Bind("AzureAD", options); });
+                   }, options => { builder.Configuration.Bind("AzureB2C", options); });
 
-builder.Services.AddAuthorization();
+builder.Services.AddAuthorization(options =>
+{
+    var azureAdOptions = builder.Configuration
+                            .GetSection("AzureB2C")
+                            .Get<ConfigurationSections.AzureAd>();
+    // Create policy to check for the scope 'read'
+
+    var scopes = azureAdOptions?.Scopes ?? string.Empty;
+
+    options.AddPolicy("ReadWrite",
+        policy => policy.Requirements.Add(new ScopesRequirement(scopes)));
+});
 //builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
