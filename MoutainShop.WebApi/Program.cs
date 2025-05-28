@@ -16,21 +16,22 @@ builder.Services.AddCors(options =>
         policy.AllowAnyOrigin()     // zezwala wszystkim originom
               .AllowAnyMethod()     // zezwala na wszystkie metody HTTP
               .AllowAnyHeader();    // zezwala na wszystkie nag³ówki
+
     });
 });
 //autentykacja kim jestes a autoryzacja czy masz dostep
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                    .AddMicrosoftIdentityWebApi(options =>
                    {
-                       builder.Configuration.Bind("AzureB2C", options);
+                       builder.Configuration.Bind("AzureAD", options);
 
                        options.TokenValidationParameters.NameClaimType = "name";
-                   }, options => { builder.Configuration.Bind("AzureB2C", options); });
+                   }, options => { builder.Configuration.Bind("AzureAD", options); });
 
 builder.Services.AddAuthorization(options =>
 {
     var azureAdOptions = builder.Configuration
-                            .GetSection("AzureB2C")
+                            .GetSection("AzureAD")
                             .Get<ConfigurationSections.AzureAd>();
     // Create policy to check for the scope 'read'
 
